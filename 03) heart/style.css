@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+}
+
+
+.heart{
+    margin: 250px;
+    width: 80px;
+    height: 80px;
+    background-color: #f20044;
+    position: relative;
+    rotate: -45deg;
+    box-shadow: -10px 10px 90px #f20044;
+    animation: ck 1s linear infinite;
+    cursor: pointer;
+}
+
+.heart:before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #f20044;
+}
+
+.heart:after{
+    content: "C.K.";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+
+@keyframes ck {
+
+    0%{
+        scale: 1.1;
+        
+    }
+    50%{
+        scale: 1.0;
+    }
+    100%{
+        scale: 0.9;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

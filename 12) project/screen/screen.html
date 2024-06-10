@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+        #video-cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        video {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #btn{
+            background: aliceblue;
+            cursor: pointer;
+            width: 30vw;
+            height: 10vh;
+            border-radius: 20px;
+            border: 2px solid red;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+           
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex">
+        <button id="btn">Start Screen Sharing</button>
+    </div>
+   
+   <div id="video-cont">
+     <video id="share-video" autoplay></video>
+   </div>
+
+   <script src="screen.js"></script>
+</body>
+</html>

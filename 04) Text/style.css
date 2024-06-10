@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, 'Poppins', 
+    Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: #262626;
+    background-image: linear-gradient(to right, 
+    #333 1px, transparent 1px),
+    linear-gradient(to bottom, #333 1px,
+     transparent 1px);
+    background-size: 4vh 4vh;
+
+}
+
+h2{
+    color: rgb(217, 235, 220);
+    font-size: 5em;
+    font-weight: 500;
+    padding: 0 100px;
+
+}
+
+h2 span{
+    position: relative;
+    color: rgba(255,255,255,0.1);
+    transition: ease-out;
+    animation: ck 9s infinite ;
+    animation-delay: calc(-3s * var(--i));
+}
+
+@keyframes ck{
+    0%{
+        display: inline-block;
+    }
+    33.33%,100%{
+        display: none;
+    }
+}
+
+h2 span::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #01fe87;
+    overflow: hidden;
+    border-right: 4px solid #01fe87;
+    filter: drop-shadow(0 0 5px #01fe87)
+     drop-shadow(0 0 
+    25px #01fe87);
+    transition: ease-in-out;
+    animation:  c 3s linear infinite;
+}
+
+@keyframes c {
+    0%,10%{
+        width: 0;
+    }
+    70%,100%{
+        width:100%
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
